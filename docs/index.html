@@ -4,52 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects - Dongwoo Lee</title>
-    <meta name="description" content="Project index for Dongwoo Lee.">
+    <meta name="description" content="Project index and software tools by Dongwoo Lee.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="site-header">
       <div class="shell">
         <nav class="nav" aria-label="Primary navigation">
-          <a href="https://dev-heps.github.io/">Portfolio</a>
+          <a href="https://dev-heps.github.io/" class="nav-back"><span>←</span><span>Portfolio</span></a>
+          <div class="nav-divider" aria-hidden="true"></div>
           <strong>Projects</strong>
           <a href="./guide/">Guide</a>
-          <a href="https://github.com/dev-heps/projects">Source</a>
+          <a href="https://github.com/dev-heps/projects" target="_blank" rel="noopener noreferrer">Source ↗</a>
         </nav>
       </div>
     </header>
     <main class="shell">
       <section class="hero">
-        <p class="eyebrow">Project hub</p>
+        <p class="eyebrow">Engineering Hub</p>
         <h1>Projects</h1>
-        <p class="lede">A maintained index of project write-ups, source repositories, demos, and GitHub Pages publications.</p>
+        <p class="lede">A maintained index of project write-ups, source repositories, live demos, and scientific tools.</p>
       </section>
-      <section class="projects" id="projects" aria-label="Project list"></section>
+      <section class="grid" id="projects" aria-label="Project list"></section>
     </main>
-    <footer class="shell">&copy; 2026 Dongwoo Lee. Back to <a href="https://dev-heps.github.io/">Portfolio</a>.</footer>
+    <footer>&copy; 2026 Dongwoo Lee. Projects Archive.</footer>
     <script src="./projects.js"></script>
     <script>
       const root = document.querySelector("#projects");
-
-      root.innerHTML = projects.map((project) => `
-        <article class="project">
-          <div>
-            <h2>${project.title}</h2>
-            <p>${project.summary}</p>
-            <div class="meta">
-              <span>${project.status}</span>
-              <span>${project.domain}</span>
-              <span>${project.year}</span>
+      if (typeof projects !== 'undefined' && projects.length > 0) {
+        root.innerHTML = projects.map((p) => `
+          <article class="card">
+            <span class="status">${p.status || 'Active'} · ${p.domain || 'Tech'}</span>
+            <h3>${p.title}</h3>
+            <p>${p.summary || ''}</p>
+            <div class="project-links">
+              ${p.source ? `<a href="${p.source}" target="_blank" rel="noreferrer">Source ↗</a>` : ''}
+              ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noreferrer">Demo ↗</a>` : ''}
+              ${p.writeup ? `<a href="${p.writeup}">Write-up →</a>` : ''}
             </div>
-          </div>
-          <div class="links">
-            ${project.source ? `<a href="${project.source}">Source</a>` : ""}
-            ${project.demo ? `<a href="${project.demo}">Demo</a>` : ""}
-            ${project.writeup ? `<a href="${project.writeup}">Write-up</a>` : ""}
-          </div>
-        </article>
-      `).join("");
+          </article>
+        `).join('');
+      } else {
+        root.innerHTML = `
+          <article class="card">
+            <span class="status">pipeline</span>
+            <h3>Active Project Pipeline</h3>
+            <p>New tools and research implementations will be indexed here.</p>
+          </article>
+        `;
+      }
     </script>
   </body>
 </html>
-
