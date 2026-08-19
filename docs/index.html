@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects - Dongwoo Lee</title>
-    <meta name="description" content="Project index and software tools by Dongwoo Lee.">
+    <meta name="description" content="Engineering and research projects by Dongwoo Lee.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -15,15 +15,15 @@
           <div class="nav-divider" aria-hidden="true"></div>
           <strong>Projects</strong>
           <a href="./guide/">Guide</a>
-          <a href="https://github.com/dev-heps/projects" target="_blank" rel="noopener noreferrer">Source ↗</a>
+          <a href="https://github.com/dev-heps" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </nav>
       </div>
     </header>
     <main class="shell">
       <section class="hero">
-        <p class="eyebrow">Engineering Hub</p>
+        <p class="eyebrow">Engineering & Research</p>
         <h1>Projects</h1>
-        <p class="lede">A maintained index of project write-ups, source repositories, live demos, and scientific tools.</p>
+        <p class="lede">Open-source computational tools, research software implementations, and benchmarks.</p>
       </section>
       <section class="grid" id="projects" aria-label="Project list"></section>
     </main>
@@ -46,10 +46,10 @@
         `).join('');
       } else {
         root.innerHTML = `
-          <article class="card">
-            <span class="status">pipeline</span>
+          <article class="card" style="grid-column: 1 / -1; padding: 2rem 1.5rem;">
+            <span class="status">Active Pipeline</span>
             <h3>Active Project Pipeline</h3>
-            <p>New tools and research implementations will be indexed here.</p>
+            <p>Research software, computational packages, and open-source tools will be indexed here as they are developed.</p>
           </article>
         `;
       }
