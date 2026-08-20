@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Research Notes',
-    summary: 'Working archive for literature reviews, research hypotheses, and computational experiment logs across digital healthcare, mathematical biology, and quantum computing.',
+    summary: 'Working archive for literature reviews, research hypotheses, and computational experiment logs across digital healthcare, mathematics, and quantum computing.',
     status: 'Active',
     domain: 'Research / Documentation',
     year: 2026,
