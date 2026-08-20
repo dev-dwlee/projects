@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@v6.0.0/devicon.min.css");
 :root {
   color-scheme: light;
   --color-bg: #ffffff;
@@ -19,8 +19,8 @@
 
 body {
   margin: 0;
-  background-color: #ffffff !important;
-  color: #09090b !important;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
