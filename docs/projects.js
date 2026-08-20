@@ -3,7 +3,7 @@
 const projects = [
   {
     title: 'Math Archive',
-    summary: 'A dedicated notebook and working archive for pure mathematics, Lean 4 formal theorem verification, and applied mathematical biology. Covers Real Analysis, Measure Theory, Topology, ODE/PDE models, and quantum computing mathematics.',
+    summary: 'Dedicated notebook and working archive for mathematics, formal verification, and computational theory.',
     status: 'Active',
     domain: 'Mathematics / Lean 4',
     year: 2026,
