@@ -2,30 +2,12 @@
 // Fields: title, summary, status, domain, year, source, demo, writeup
 const projects = [
   {
-    title: 'Math Archive',
-    summary: 'Dedicated notebook and working archive for mathematics, formal verification, and computational theory.',
-    status: 'Active',
-    domain: 'Mathematics / Lean 4',
+    title: 'Project Name Template',
+    summary: 'Brief description of the computational tool, software implementation, or benchmark experiment.',
+    status: 'Template',
+    domain: 'Domain / Tech Stack',
     year: 2026,
-    source: 'https://github.com/dev-heps/math-archive',
-    demo: 'https://dev-heps.github.io/math-archive/',
-  },
-  {
-    title: 'Research Notes',
-    summary: 'Working archive for literature reviews, research hypotheses, and computational experiment logs across digital healthcare, mathematics, and quantum computing.',
-    status: 'Active',
-    domain: 'Research / Documentation',
-    year: 2026,
-    source: 'https://github.com/dev-heps/research-notes',
-    demo: 'https://dev-heps.github.io/research-notes/',
-  },
-  {
-    title: 'Portfolio Hub',
-    summary: 'Static portfolio and navigation hub for all public archives and projects. Built with Next.js and deployed to GitHub Pages.',
-    status: 'Active',
-    domain: 'Web / Next.js',
-    year: 2026,
-    source: 'https://github.com/dev-heps/dev-heps.github.io',
-    demo: 'https://dev-heps.github.io/',
+    source: 'https://github.com/dev-heps',
+    demo: 'https://dev-heps.github.io/projects/',
   },
 ];
