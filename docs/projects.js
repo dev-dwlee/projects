@@ -7,7 +7,7 @@ const projects = [
     status: 'Template',
     domain: 'Domain / Tech Stack',
     year: 2026,
-    source: 'https://github.com/dev-heps',
-    demo: 'https://dev-heps.github.io/projects/',
+    source: 'https://github.com/dwlee',
+    demo: 'https://dwlee.github.io/projects/',
   },
 ];

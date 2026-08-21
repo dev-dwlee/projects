@@ -1,6 +1,6 @@
 # Agent Notes
 
-This repository is the Projects hub for `https://dev-heps.github.io/projects/`.
+This repository is the Projects hub for `https://dwlee.github.io/projects/`.
 
 ## Purpose
 
@@ -36,6 +36,6 @@ git diff --check
 
 After pushing, verify:
 
-- `https://dev-heps.github.io/projects/`
-- `https://dev-heps.github.io/projects/guide/`
+- `https://dwlee.github.io/projects/`
+- `https://dwlee.github.io/projects/guide/`
 

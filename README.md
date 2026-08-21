@@ -2,7 +2,7 @@
 
 Project index and maintenance hub for Dongwoo Lee.
 
-Live site: https://dev-heps.github.io/projects/
+Live site: https://dwlee.github.io/projects/
 
 This repository is not meant to replace individual project repositories. Instead, it keeps a stable public index of projects and links each project to:
 
